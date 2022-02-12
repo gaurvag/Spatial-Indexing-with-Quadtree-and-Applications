@@ -1,4 +1,19 @@
-// circle class for a circle shaped query
+/*
+Circle class
+
+Properties: 
+1) x -> x coordinate of the center of circle 
+2) y -> y coordinate of the center of circle 
+3) r -> radius of circle 
+
+Methods:
+1) containtPoint(pt) -> return true if Point pt lies inside the circle.
+                               O(1) complexity
+2) intersectsAABB(range) -> returns true if it is overlapping with AABB range.             
+                               O(1) complexity
+
+*/
+
 class Circle {
   constructor(x, y, r) {
     this.x = x;

@@ -1,6 +1,7 @@
 var width = 100,
   height = 100;
-var boundary = new AABB(50, 50, width, height);
+var boundary = new AABB(50, 50, width, height);  
+
 var qt = new QuadTree(boundary);
 
 for (var i = 0; i < 50; i++) {
@@ -22,3 +23,5 @@ var searchPoint = new Point(50, 50);
 var radar = new Circle(searchPoint.x, searchPoint.y, 20); //x,y,r
 var pq = qt.kClosest(searchPoint, 5, radar); //pt, k, radar,
 console.log(pq);
+
+

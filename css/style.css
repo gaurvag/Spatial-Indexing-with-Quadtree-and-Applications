@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+#myCanvas{
+  background-color: #F2F5C8;
+}

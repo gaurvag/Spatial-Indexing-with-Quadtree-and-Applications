@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="container">
+      <div class="column" id="column1">
+        <br><br><br>
+        <button onclick="func1()">Add Data Points</button>
+        <br><br>
+        <button onclick="func2()">Range Query</button>
+        <br><br>
+        <button onclick="func3()">K Nearest Neighbours</button>
+        <br><br>
+        <hr>
+        <br><br>
+        <button onclick="stopFunction()">Stop</button>
+        <br><br>
+        <button onclick="startFunction()">Start</button>
+        <br><br>
+        <hr>
+        <br><br>
+        <button onclick="addSource()">Add Source</button>
+        <br><br>
+        <button onclick="addDestination()">Add Destination</button>
+        <br><br>
+        <button onclick="makePath()">Show Path</button>
+      </div>
+
+      <div class="column" id="column2">
+        <canvas id="myCanvas"></canvas>
+      </div>
+    </div>
+    <script src="scripts/queue.js" charset="utf-8"></script>
     <script src="scripts/priorityQueue.js" charset="utf-8"></script>
     <script src="scripts/point.js" charset="utf-8"></script>
     <script src="scripts/aabb.js" charset="utf-8"></script>
@@ -15,5 +45,3 @@
     <script src="scripts/main.js" charset="utf-8"></script>
   </body>
 </html>
-
-

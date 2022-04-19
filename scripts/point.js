@@ -19,7 +19,7 @@ class Point {
   constructor(x, y, type, data) {
     this.x = x;
     this.y = y;
-    this.type = type;
+    this.type = type;  
     this.data = data;
   }
 

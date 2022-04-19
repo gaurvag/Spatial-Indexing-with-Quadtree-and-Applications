@@ -139,4 +139,21 @@ class QuadTree {
     }
     return pq;
   }
+
+  draw() {
+    var x = this.boundary.left,
+      y = this.boundary.top,
+      w = this.boundary.w,
+      h = this.boundary.h;
+    for (var i = 0; i < this.points.length; i++) {
+      ctx.fillRect(this.points[i].x,this.points[i].y,3,3);
+    }
+    ctx.strokeRect(x, y, w, h);
+    if (this.divided) {
+      this.nw.draw();
+      this.ne.draw();
+      this.sw.draw();
+      this.se.draw();
+    }
+  }
 }
